@@ -2,28 +2,39 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="./css/login.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+        <script src="./js/bootstrap.min.js"></script>
         <title>Multipurpose database website</title>
     </head>
     <body>
         <!-- The login file doesn't have <header> and <nav> tag -->
         <article>
-            <section>
+            <section id="login">
                 <!-- Here comes the login form -->
                 <!-- We want this in the center -->
-                <form action="">
-                    <h1>Login</h1>
-                    <div class="container">
-                        <label><b>Username or email</b></label>
-                        <input type="text" placeholder="Enter Username or Email" name="uname" required>
-
-                        <label><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-                        <button type="submit">Login</button>
-
-                        <a href="#">I forgot my password</a>
+                <div class="container">
+                        <div class="row">
+                            <div class="col-xl">
+                                <div class="form-wrap">
+                                    <h1>Please Login</h1>
+                                        <form role="form" method="post" id="login-form">
+                                            <div class="form-group">
+                                                <label for="email" class="sr-only"><b>Username or email</b></label>
+                                                <input type="text" id="email" placeholder="Enter Username or Email" name="uname" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="key" class="sr-only"><b>Password</b></label>
+                                                <input type="password" placeholder="Enter Password" name="psw"  id="key" required>
+                                            </div>
+                                            <button type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block">Login</button>
+                                            <div id="forgot">
+                                                <a href="#">I forgot my password</a>
+                                            </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </form>
             </section>
         </article>
         <!-- The login file doesn't have <aside> and <footer> tag -->
