@@ -7,7 +7,10 @@
         <title>Multipurpose database website</title>
     </head>
     <body>
-        <!-- The login file doesn't have <header> and <nav> tag -->
+        <header>
+            <h1>Welcome to our Database!</h1>
+        </header>
+        <!-- The login file doesn't have <nav> tag -->
         <article>
             <section id="login">
                 <!-- Here comes the login form -->
@@ -16,7 +19,7 @@
                         <div class="row">
                             <div class="col-xl">
                                 <div class="form-wrap">
-                                    <h1>Please Login</h1>
+                                    <h1>Please Sign-in to continue..</h1>
                                         <form role="form" method="post" id="login-form">
                                             <div class="form-group">
                                                 <label for="email" class="sr-only"><b>Username or email</b></label>
@@ -26,7 +29,7 @@
                                                 <label for="key" class="sr-only"><b>Password</b></label>
                                                 <input type="password" placeholder="Enter Password" name="psw"  id="key" required>
                                             </div>
-                                            <button type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block">Login</button>
+                                            <button type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block">Sign-in</button>
                                             <div id="forgot">
                                                 <a href="#">I forgot my password</a>
                                             </div>
