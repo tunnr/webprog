@@ -7,16 +7,14 @@
         //this script please save another js file
         <script>
             function stateProvide(){
-                var state;
                 if (/*SQL query is 1*/) {
-                    state = "homepage/homepage.php";
+                    document.getElementById("showState").src="homepage/homepage.htm";
                 }else{
-                    state = "homepage/firstlogin.html";
+                    document.getElementById("showState").src="homepage/firstlogin.html";
                 }
-                return state;
             }
         </script>
-        
+
     </head>
     <body>
         <header>
@@ -32,8 +30,7 @@
         </header>
         <article>
             <section>
-                //here is a JS variable, please initial homepage/homepage.php
-                <iframe src="stateProvide()" scrolling="no"></iframe>
+                <iframe id="showState" src="" scrolling="no"></iframe>
             </section>
         </article>
         <aside>
