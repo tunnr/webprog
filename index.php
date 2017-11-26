@@ -20,7 +20,7 @@
                             <div class="col-xl">
                                 <div class="form-wrap">
                                     <h1>Please Sign-in to continue..</h1>
-                                        <form role="form" method="post" id="login-form">
+                                        <form role="form" method="post" id="login-form" action="./login.inc.php">
                                             <div class="form-group">
                                                 <label for="email" class="sr-only"><b>Username or email</b></label>
                                                 <input type="text" id="email" placeholder="Enter Username or Email" name="uname" required>
