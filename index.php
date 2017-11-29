@@ -31,7 +31,7 @@
                                             </div>
                                             <button type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block">Sign-in</button>
                                             <div id="forgot">
-                                                <a href="#">I forgot my password</a>
+                                                <a href="./forgatpw.html">I forgot my password</a>
                                             </div>
                                     </form>
                                 </div>
