@@ -1,0 +1,75 @@
+#oldal{
+    position: relative;
+    margin: auto;
+}
+#nav {
+    width: 250px;
+    height: 2000px;
+    overflow: auto;
+    float: left;
+    position: fixed;
+    background: -webkit-linear-gradient(right, #e4e4e6, #d3cdce);
+}
+#head {
+    background-color: #024580;
+    height: 35px;
+}
+#home {
+    float: left;
+    padding: 2px;
+}
+#logout {
+    float: right;
+    padding: 5px;
+}
+#frame {
+
+    width: 1800px;
+    height: 900px;
+    float: right;
+    position: fixed;
+}
+#framesite{
+    padding: 20px;
+}
+.navtab {
+    padding: 0px;
+    margin-top: 20px;
+    width:100%;
+}
+.navtab button:hover {
+    background-color: #cbd1cd;
+    cursor: pointer;
+    transition: all 10ms ease;
+}
+.navtab button{
+    width: 100%;
+    padding-bottom: 6px;
+}
+#index {
+    padding: 5px;
+}
+#exit {
+    padding: 6px;
+}
+#logo {
+    padding: 3px;
+}
+.btn-default{
+    width: 100%;
+    background-color: white;
+    opacity: 0.6;
+}
+/* for modal
+hr.message-inner-separator
+{
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}*/
