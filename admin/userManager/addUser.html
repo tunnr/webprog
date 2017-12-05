@@ -1,0 +1,20 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<srcipt>
+    $(document).ready(function(){
+        $.ajax(function(){
+            $.get("tableColumnsGet.php", function(data){
+
+                var content = "<table>"
+                for(i=0; i<data.length; i++){
+                    content += '<tr><td>' + 'data[i] ' +  i + '</td></tr>';
+                }
+                content += "</table>"
+
+                $('#addUser').append(content);
+
+            });
+        });
+    });
+</srcipt>
+<div id="addUser">
+</div>
