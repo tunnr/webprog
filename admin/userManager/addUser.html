@@ -1,6 +1,6 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 <srcipt>
     $(document).ready(function(){
+        /*
         $.ajax(function(){
             $.get("tableColumnsGet.php", function(data){
 
@@ -13,6 +13,14 @@
                 $('#addUser').append(content);
 
             });
+        });*/
+        $.ajax({
+            type: "GET",
+            url: "/tableColumnsGet.html",
+            dataType:'JSON',
+            success: function(response){
+                console.log(response.data);
+            }
         });
     });
 </srcipt>
