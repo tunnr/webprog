@@ -3,6 +3,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <script src="../js/jquery-3.2.1.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <title>Multipurpose database website</title>
 
@@ -53,8 +54,8 @@
                 <button class="btn btn-default btn-sm" onclick="window.location.href='#'">System Management</button>
             </div>
         </div>
-        <!-- 1st alert modal
-        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#alertmodalgood">Open Modal</button>
+        <!-- first type modal -->
+        <!--<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#alertmodalgood">Open Modal</button>-->
         <div id="alertmodalgood" class="modal fade" role="dialog">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -88,7 +89,7 @@
             </div>
         </div> -->
         <!-- 2nd alerts modals
-        <div class="container">
+        <div class="container" align="center">
             <div class="row">
                 <div class="col-sm-6 col-md-6">
                     <div class="alert alert-success">
