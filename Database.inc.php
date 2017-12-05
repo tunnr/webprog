@@ -7,9 +7,9 @@
  */
 
 define("DB_HOST", "localhost");
-define("DB_USER", "");
+define("DB_USER", "root");
 define("DB_PASS", "");
-define("DB_NAME", "test");
+define("DB_NAME", "web");
 
 $dsn = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME;
 // Set options
@@ -47,7 +47,7 @@ function test_input($data)
  *              UDNER CONSTRUCTION           *
  *                                           *
  *********************************************/
-/*class Database{
+class Database{
     private $host      = DB_HOST;
     private $user      = DB_USER;
     private $pass      = DB_PASS;
@@ -111,4 +111,4 @@ function test_input($data)
         $this->execute();
         return $this->stmt->fetch(PDO::FETCH_ASSOC);
     }
-}*/
+}
