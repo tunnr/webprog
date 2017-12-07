@@ -1,28 +1,37 @@
-<srcipt>
-    $(document).ready(function(){
-        /*
-        $.ajax(function(){
-            $.get("tableColumnsGet.php", function(data){
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<div id="addUser" ng-app="addUser" ng-controller="myCtrl" init="$index=0">
+    <table>
+        <tr>
+            <th ng-repeat="x in array">{{x}}</th>
+        </tr>
+        <tr ng-repeat="x in rows">
+            <td >{{x}}</td>
+        </tr>
 
-                var content = "<table>"
-                for(i=0; i<data.length; i++){
-                    content += '<tr><td>' + 'data[i] ' +  i + '</td></tr>';
-                }
-                content += "</table>"
-
-                $('#addUser').append(content);
+    </table>
+</div>
+<script>
+    var app = angular.module('addUser', []);
+    app.controller('myCtrl', function($scope, $http) {
+        $http.get("tableColumnsGet.php")
+            .then(function (response) {
+                $scope.array = response.data;
+                data($scope.array);
 
             });
-        });*/
-        $.ajax({
-            type: "GET",
-            url: "/tableColumnsGet.html",
-            dataType:'JSON',
-            success: function(response){
-                console.log(response.data);
-            }
-        });
+
+
+
+
+        var data = function(array) {
+            var json = JSON.stringify(array);
+            $http({
+                method: 'POST',
+                url: './tableRowsGet.php',
+                data: array
+            }).then(function(eredmeny){
+                $scope.rows = angular.fromJson(eredmeny.data);
+            })
+        }
     });
-</srcipt>
-<div id="addUser">
-</div>
+</script>

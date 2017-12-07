@@ -5,8 +5,6 @@ $table_name= "laci";
 
 $query = "SHOW COLUMNS FROM $table_name";
 
-echo $query;
-
 //resource mysqli_list_fields ( string $db , string $table_name [, resource $link_identifier = NULL ] );
 
 $result=$dbh->query($query);
