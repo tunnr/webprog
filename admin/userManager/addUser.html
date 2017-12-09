@@ -1,14 +1,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
-<div id="addUser" ng-app="addUser" ng-controller="myCtrl" init="$index=0">
-    <table>
-        <tr>
-            <th ng-repeat="x in array">{{x}}</th>
-        </tr>
-        <tr ng-repeat="x in rows">
-            <td >{{x}}</td>
-        </tr>
-
-    </table>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./DrawTable.js"></script>
+<div id="here_table" ng-app="addUser" ng-controller="myCtrl" init="$index=0">
 </div>
 <script>
     var app = angular.module('addUser', []);
@@ -30,7 +24,8 @@
                 url: './tableRowsGet.php',
                 data: array
             }).then(function(eredmeny){
-                $scope.rows = angular.fromJson(eredmeny.data);
+                $scope.rows = eredmeny.data;
+                generate_table($scope.rows, $scope.array);
             })
         }
     });

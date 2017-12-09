@@ -20,7 +20,7 @@
 *
 */
 
-function generate_table(data) {
+function generate_table(data, keys) {
 
     var size = _.size(data); //a tomb merete
     var keys = _.keys(data[0]); //a kulcsok amivel vegig megyek rajta
