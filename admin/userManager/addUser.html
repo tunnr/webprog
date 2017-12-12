@@ -3,6 +3,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./DrawTable.js"></script>
 <div id="here_table" ng-app="addUser" ng-controller="myCtrl" init="$index=0">
+    <table>
+        <tr>
+            <th ng-repeat="x in array">
+                {{x}}
+            </th>
+        </tr>
+    </table>
 </div>
 <script>
     var app = angular.module('addUser', []);
@@ -10,13 +17,13 @@
         $http.get("tableColumnsGet.php")
             .then(function (response) {
                 $scope.array = response.data;
-                data($scope.array);
+                //data($scope.array);
 
             });
 
 
 
-
+        /*
         var data = function(array) {
             var json = JSON.stringify(array);
             $http({
@@ -28,5 +35,6 @@
                 generate_table($scope.rows, $scope.array);
             })
         }
+        */
     });
 </script>
